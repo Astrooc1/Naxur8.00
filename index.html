@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naxur8.0 - Tibia 8.00</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><img src="logo.png" alt="Naxur8.0 Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#descargas">Descargas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="inicio" class="hero-section">
+        <img src="logo.png" alt="Naxur8.0 Logo" class="hero-logo">
+        <h1>Naxur8.0 - Tibia 8.00</h1>
+        <p>Vive la experiencia clásica de Tibia en un mundo totalmente fiel.</p>
+        <a href="#descargas" class="btn">Descargar Cliente</a>
+    </section>
+
+    <!-- Características -->
+    <section id="caracteristicas" class="features">
+        <h2>Características del Servidor</h2>
+        <div class="feature-container">
+            <div class="feature-box">
+                <h3>Experiencia 1x</h3>
+                <p>Disfruta de un mundo clásico con rate 1x.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Clases Balanceadas</h3>
+                <p>Knight, Paladin, Sorcerer y Druid perfectamente equilibrados.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Eventos Semanales</h3>
+                <p>Eventos PvP y PvE para toda la comunidad.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Noticias -->
+    <section id="noticias" class="news">
+        <h2>Últimas Noticias</h2>
+        <div class="news-container">
+            <article class="news-item">
+                <h3>Actualización de mapa</h3>
+                <p>Se agregaron nuevas zonas y quests para explorar.</p>
+            </article>
+            <article class="news-item">
+                <h3>Evento PvP este fin de semana</h3>
+                <p>Participa y gana recompensas exclusivas.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Descargas -->
+    <section id="descargas" class="downloads">
+        <h2>Descargas</h2>
+        <div class="download-boxes">
+            <div class="download-box">
+                <h3>Cliente Tibia 8.00</h3>
+                <a href="#" class="btn">Descargar</a>
+            </div>
+            <div class="download-box">
+                <h3>Guía de Instalación</h3>
+                <a href="#" class="btn">Ver Guía</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <p>© 2026 Naxur8.0 | Comunidad de Tibia 8.00</p>
+        <p>Síguenos en <a href="#">Discord</a> | <a href="#">Foro</a></p>
+    </footer>
+
+    <!-- JavaScript para menú móvil -->
+    <script>
+        const menu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        menu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
